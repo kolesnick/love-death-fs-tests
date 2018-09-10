@@ -6,10 +6,29 @@ namespace TLK.PortalsAndHeroes.Tests
 {
     internal class HellgateTests
     {
-        private readonly Hellgate hellgate = new Hellgate();
+        [Test]
+        public void HellgateInscriptionShouldBeLasciateOgniSperanzaVoiChentrate()
+        {
+            // arrange
+            var hellgate = CreateHellgate();
+
+            // assert
+            hellgate.Inscription.Should().Be("Lasciate ogni speranza, voi ch'entrate");
+        }
 
         [Test]
-        public void HellgateInscriptionShouldBeLasciateOgniSperanzaVoiChentrate() =>
-            hellgate.Inscription.Should().Be("Lasciate ogni speranza, voi ch'entrate");
+        public void ClosedHellgateInscriptionShouldBeEmpty()
+        {
+            // arrange
+            var hellgate = CreateHellgate();
+
+            // act
+            hellgate.Close();
+
+            // assert
+            hellgate.Inscription.Should().BeEmpty();
+        }
+
+        private static Hellgate CreateHellgate() => new Hellgate();
     }
 }

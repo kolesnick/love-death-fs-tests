@@ -2,6 +2,13 @@
 {
     public class Hellgate
     {
-        public string Inscription => "Lasciate ogni speranza, voi ch'entrate";
+        private bool closed = false;
+
+        public string Inscription =>
+            this.closed
+                ? string.Empty
+                : "Lasciate ogni speranza, voi ch'entrate";
+
+        public void Close() => this.closed = true;
     }
 }
