@@ -7,6 +7,16 @@ namespace TLK.PortalsAndHeroes.Tests
     internal class HellgateTests
     {
         [Test]
+        public void HellgateInscriptionIsEqualToLasciateOgniSperanzaVoiChentrate()
+        {
+            // arrange
+            var hellgate = CreateHellgate();
+
+            // assert
+            Assert.That(hellgate.Inscription, Is.EqualTo("Lasciate ogni speranza, voi ch'entrate"));
+        }
+
+        [Test]
         public void HellgateInscriptionShouldBeLasciateOgniSperanzaVoiChentrate()
         {
             // arrange
