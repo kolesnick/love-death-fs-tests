@@ -18,8 +18,10 @@
   <ItemGroup>
     <Compile Include="Ported\HellgateTests.cs.fs" />
     <Compile Include="Ported\BifrostTests.cs.fs" />
+    <Compile Include="Ported\InterdimensionalPortalTests.cs.fs" />
     <Compile Include="HellgateTests.fs" />
     <Compile Include="BifrostTests.fs" />
+    <Compile Include="InterdimensionalPortalTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
