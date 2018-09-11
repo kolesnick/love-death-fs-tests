@@ -1,4 +1,4 @@
-﻿module TLK.PortalsAndHeroes.Tests.HellgateTests
+﻿module TLK.PortalsAndHeroes.Tests.Hellgate
 
 open NUnit.Framework
 open FsUnit.TopLevelOperators

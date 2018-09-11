@@ -1,4 +1,4 @@
-﻿module TLK.PortalsAndHeroes.Tests.BifrostTests
+﻿module TLK.PortalsAndHeroes.Tests.Bifrost
 
 open NUnit.Framework
 open TLK.PortalsAndHeroes.Kernel
