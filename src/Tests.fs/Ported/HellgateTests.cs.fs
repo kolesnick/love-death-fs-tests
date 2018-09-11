@@ -7,7 +7,7 @@ open TLK.PortalsAndHeroes.Kernel
 let createHellgate() = new Hellgate()
 
 [<Test>]
-let HellgateInscriptionIsEqualToLasciateOgniSperanzaVoiChentrate() =
+let ``hellgate inscription is "Lasciate ogni speranza, voi ch'entrate"``() =
 
     // arrange
     let hellgate = createHellgate()
@@ -16,7 +16,7 @@ let HellgateInscriptionIsEqualToLasciateOgniSperanzaVoiChentrate() =
     Assert.That(hellgate.Inscription, Is.EqualTo("Lasciate ogni speranza, voi ch'entrate"))
 
 [<Test>]
-let HellgateInscriptionShouldBeLasciateOgniSperanzaVoiChentrate() =
+let ``hellgate inscription should be "Lasciate ogni speranza, voi ch'entrate"``() =
 
     // arrange
     let hellgate = createHellgate()
@@ -25,7 +25,7 @@ let HellgateInscriptionShouldBeLasciateOgniSperanzaVoiChentrate() =
     hellgate.Inscription |> should equal "Lasciate ogni speranza, voi ch'entrate"
 
 [<Test>]
-let ClosedHellgateInscriptionShouldBeEmpty() =
+let ``closed hellgate inscription should be empty``() =
 
     // arrange
     let hellgate = createHellgate()

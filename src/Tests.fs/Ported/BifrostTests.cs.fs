@@ -10,7 +10,7 @@ let createHofund() = new Hofund()
 let createInfinityGauntlet() = new InfinityGauntlet()
 
 [<Test>]
-let HofundShouldOpenBifrost() =
+let ``Hofund should open Bifrost``() =
 
     // arrange
     let hofund = createHofund()
@@ -22,7 +22,7 @@ let HofundShouldOpenBifrost() =
     act |> shouldNotThrow
 
 [<Test>]
-let InfinityGauntletShouldNotOpenBifrost() =
+let ``Infinity Gauntlet should not open Bifrost``() =
 
     // arrange
     let infinityGauntlet = createInfinityGauntlet()

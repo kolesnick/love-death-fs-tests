@@ -7,7 +7,7 @@ namespace TLK.PortalsAndHeroes.Tests
     internal class HellgateTests
     {
         [Test]
-        public void HellgateInscriptionIsEqualToLasciateOgniSperanzaVoiChentrate()
+        public void HellgateInscriptionIsLasciateOgniSperanzaVoiChentrate()
         {
             // arrange
             var hellgate = CreateHellgate();
