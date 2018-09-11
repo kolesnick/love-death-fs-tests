@@ -3,18 +3,16 @@
 open NUnit.Framework
 open TLK.PortalsAndHeroes.Kernel
 
-let testDelegate func = new TestDelegate(func)
+let testDelegate func = TestDelegate (func)
 let shouldNotThrow = testDelegate >> Assert.DoesNotThrow
-let shouldThrow action = Assert.That(testDelegate action, Throws.Exception)
+let shouldThrow action = Assert.That (testDelegate action, Throws.Exception)
 
-let hofund = new Hofund()
-let infinityGauntlet = new InfinityGauntlet()
-let openBifrost key () = new Bifrost(key) |> ignore
+let openBifrost key () = (key) |> Bifrost |> ignore
 
 [<Test>]
 let ``Hofund should open Bifrost`` () =
-    hofund |> openBifrost |> shouldNotThrow
+    () |> Hofund |> openBifrost |> shouldNotThrow
 
 [<Test>]
 let ``Infinity Gauntlet should not open Bifrost`` () =
-    infinityGauntlet |> openBifrost |> shouldThrow
+    () |> InfinityGauntlet |> openBifrost |> shouldThrow
