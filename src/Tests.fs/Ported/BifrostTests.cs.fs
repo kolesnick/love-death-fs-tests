@@ -1,12 +1,13 @@
 ﻿module TLK.PortalsAndHeroes.Tests.Ported.BifrostTests
 
 open NUnit.Framework
-open FsUnit.TopLevelOperators
 open TLK.PortalsAndHeroes.Kernel
 
-let shouldNotFail action = Assert.DoesNotThrow(new TestDelegate(action))
+let shouldNotThrow action = Assert.DoesNotThrow(new TestDelegate(action))
+let shouldThrow action = Assert.That(new TestDelegate(action), Throws.Exception)
 
 let createHofund() = new Hofund()
+let createInfinityGauntlet() = new InfinityGauntlet()
 
 [<Test>]
 let HofundShouldOpenBifrost() =
@@ -18,4 +19,16 @@ let HofundShouldOpenBifrost() =
     let act = fun () -> new Bifrost(hofund) |> ignore
 
     // assert
-    act |> shouldNotFail
+    act |> shouldNotThrow
+
+[<Test>]
+let InfinityGauntletShouldNotOpenBifrost() =
+
+    // arrange
+    let infinityGauntlet = createInfinityGauntlet()
+
+    // act
+    let act = fun () -> new Bifrost(infinityGauntlet) |> ignore
+
+    // assert
+    act |> shouldThrow

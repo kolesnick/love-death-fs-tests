@@ -1,15 +1,20 @@
 ﻿module TLK.PortalsAndHeroes.Tests.BifrostTests
 
 open NUnit.Framework
-open FsUnit.TopLevelOperators
 open TLK.PortalsAndHeroes.Kernel
 
-let testDelegate func = new TestDelegate(func >> ignore)
-let shouldNotFail = testDelegate >> Assert.DoesNotThrow
+let testDelegate func = new TestDelegate(func)
+let shouldNotThrow = testDelegate >> Assert.DoesNotThrow
+let shouldThrow action = Assert.That(testDelegate action, Throws.Exception)
 
 let hofund = new Hofund()
-let bifrost key () = new Bifrost(key)
+let infinityGauntlet = new InfinityGauntlet()
+let openBifrost key () = new Bifrost(key) |> ignore
 
 [<Test>]
-let ``Hofund should open Bifrost``() =
-    hofund |> bifrost |> shouldNotFail
+let ``Hofund should open Bifrost`` () =
+    hofund |> openBifrost |> shouldNotThrow
+
+[<Test>]
+let ``Infinity Gauntlet should not open Bifrost`` () =
+    infinityGauntlet |> openBifrost |> shouldThrow
