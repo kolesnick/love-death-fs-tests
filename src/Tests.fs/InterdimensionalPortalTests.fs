@@ -11,12 +11,8 @@ let teleport hero currentDimension anotherDimension =
     let portal = (currentDimension, anotherDimension) |> InterdimensionalPortal
     hero |> portal.Teleport
 
-let bard = hero "Bard"
-let ranger = hero "Ranger"
-let rogue = hero "Rogue"
-let sorcerer = hero "Sorcerer"
-let warlock = hero "Warlock"
-let wizard = hero "Wizard"
+let (bard, ranger, rogue, sorcerer, warlock, wizard) =
+    (hero "Bard", hero "Ranger", hero "Rogue", hero "Sorcerer", hero "Warlock", hero "Wizard")
 
 [<Test>]
 let ``portal should teleport hero from current dimension``() =
