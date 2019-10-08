@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TLK.PortalsAndHeroes.Kernel
+namespace TLK.LoveDeathFSharp.Kernel
 {
     public class Bifrost
     {

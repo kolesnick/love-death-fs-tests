@@ -1,9 +1,9 @@
 ﻿using System;
 using FluentAssertions;
 using NUnit.Framework;
-using TLK.PortalsAndHeroes.Kernel;
+using TLK.LoveDeathFSharp.Kernel;
 
-namespace TLK.PortalsAndHeroes.Tests
+namespace TLK.LoveDeathFSharp.Tests
 {
     internal class BifrostTests
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace TLK.PortalsAndHeroes.Kernel
+namespace TLK.LoveDeathFSharp.Kernel
 {
     public class InterdimensionalPortal
     {

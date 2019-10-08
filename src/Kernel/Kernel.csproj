@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>TLK.PortalsAndHeroes.Kernel</AssemblyName>
-    <RootNamespace>TLK.PortalsAndHeroes.Kernel</RootNamespace>
+    <AssemblyName>TLK.LoveDeathFSharp.Kernel</AssemblyName>
+    <RootNamespace>TLK.LoveDeathFSharp.Kernel</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

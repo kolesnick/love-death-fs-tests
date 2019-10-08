@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AssemblyName>TLK.PortalsAndHeroes.Tests.CSharp</AssemblyName>
-    <RootNamespace>TLK.PortalsAndHeroes.Tests</RootNamespace>
+    <AssemblyName>TLK.LoveDeathFSharp.Tests.CSharp</AssemblyName>
+    <RootNamespace>TLK.LoveDeathFSharp.Tests</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

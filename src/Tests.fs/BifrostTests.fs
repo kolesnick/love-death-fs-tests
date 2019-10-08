@@ -1,7 +1,7 @@
-﻿module TLK.PortalsAndHeroes.Tests.Bifrost
+﻿module TLK.LoveDeathFSharp.Tests.Bifrost
 
 open NUnit.Framework
-open TLK.PortalsAndHeroes.Kernel
+open TLK.LoveDeathFSharp.Kernel
 
 let testDelegate func = TestDelegate (func)
 let shouldNotThrow = testDelegate >> Assert.DoesNotThrow

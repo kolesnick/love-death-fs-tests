@@ -1,7 +1,7 @@
-﻿module TLK.PortalsAndHeroes.Tests.Ported.Bifrost
+﻿module TLK.LoveDeathFSharp.Tests.Ported.Bifrost
 
 open NUnit.Framework
-open TLK.PortalsAndHeroes.Kernel
+open TLK.LoveDeathFSharp.Kernel
 
 let shouldNotThrow action = Assert.DoesNotThrow(new TestDelegate(action))
 let shouldThrow action = Assert.That(new TestDelegate(action), Throws.Exception)

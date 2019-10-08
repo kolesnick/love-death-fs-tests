@@ -1,4 +1,4 @@
-﻿namespace TLK.PortalsAndHeroes.Kernel
+﻿namespace TLK.LoveDeathFSharp.Kernel
 {
     public class Yogurt
     {

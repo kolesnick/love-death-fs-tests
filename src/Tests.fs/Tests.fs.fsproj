@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AssemblyName>TLK.PortalsAndHeroes.Tests.FSharp</AssemblyName>
+    <AssemblyName>TLK.LoveDeathFSharp.Tests.FSharp</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

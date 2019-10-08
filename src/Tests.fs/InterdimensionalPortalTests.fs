@@ -1,8 +1,8 @@
-﻿module TLK.PortalsAndHeroes.Tests.``Interdimensional Portal``
+﻿module TLK.LoveDeathFSharp.Tests.``Interdimensional Portal``
 
 open NUnit.Framework
 open FsUnit.TopLevelOperators
-open TLK.PortalsAndHeroes.Kernel
+open TLK.LoveDeathFSharp.Kernel
 open System.Linq
 
 let hero = Hero

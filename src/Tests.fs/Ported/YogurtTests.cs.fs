@@ -1,8 +1,8 @@
-﻿module TLK.PortalsAndHeroes.Tests.Ported.Yogurt
+﻿module TLK.LoveDeathFSharp.Tests.Ported.Yogurt
 
 open NUnit.Framework
 open FsUnit.TopLevelOperators
-open TLK.PortalsAndHeroes.Kernel
+open TLK.LoveDeathFSharp.Kernel
 
 [<Test>]
 let ``Yogurt's request is "We. Want. Ohio."``() =

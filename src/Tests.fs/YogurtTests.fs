@@ -1,8 +1,8 @@
-﻿module TLK.PortalsAndHeroes.Tests.Yogurt
+﻿module TLK.LoveDeathFSharp.Tests.Yogurt
 
 open NUnit.Framework
 open FsUnit.TopLevelOperators
-open TLK.PortalsAndHeroes.Kernel
+open TLK.LoveDeathFSharp.Kernel
 
 let request (yogurt : Yogurt) = yogurt.Request
 
