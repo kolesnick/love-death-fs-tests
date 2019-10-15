@@ -17,14 +17,15 @@
 
   <ItemGroup>
     <Compile Include="Ported\YogurtTests.cs.fs" />
+    <Compile Include="Ported\TankTests.cs.fs" />
     <Compile Include="Ported\WormholeTests.cs.fs" />
-    <Compile Include="Ported\BifrostTests.cs.fs" />
     <Compile Include="YogurtTests.fs" />
+    <Compile Include="TankTests.fs" />
     <Compile Include="WormholeTests.fs" />
-    <Compile Include="BifrostTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Foq" Version="1.8.0" />
     <PackageReference Include="FsUnit" Version="3.2.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
