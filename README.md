@@ -1,2 +1,2 @@
-# Portals & Heroes
-An imaginary game which is intended to showcase some interesting programming techniques.
+# ❤️☠️⚗️
+Backing project for Love, Death & F# Tests talk.
