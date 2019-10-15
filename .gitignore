@@ -1,4 +1,6 @@
 /src/.vs
+/src/.vscode
+/src/.ionide
 /src/*/bin
 /src/*/obj
 
