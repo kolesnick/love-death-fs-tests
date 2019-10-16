@@ -17,7 +17,7 @@ let displace ship origin destination =
     ship |> wormhole.Displace
 
 [<Test>]
-let ``wormhole should displace Blue Goose from Local Bubble to Schedar Sector``() =
+let ``wormhole should displace Blue Goose from Local Bubble to Schedar Sector`` () =
     let localBubble = spaceSector [ blueGoose; serenity; babylon5; ussVoyager ]
     let schedarSector = spaceSector [ samulakiStation ]
 
