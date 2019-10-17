@@ -14,7 +14,7 @@ let ``tank should not shoot with wolf inside``() =
     let tank = new Tank(wolf)
 
     // act
-    let act () = tank.Shoot() |> ignore
+    let act () = tank.Shoot()
 
     // assert
     act |> shouldThrowException

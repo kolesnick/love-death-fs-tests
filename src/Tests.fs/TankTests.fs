@@ -5,7 +5,7 @@ open TLK.LoveDeathFSharp.Kernel
 
 let shouldThrowException action = Assert.That(new TestDelegate(action), Throws.Exception)
 
-let shoot (tank : Tank) () = tank.Shoot() |> ignore
+let shoot (tank : Tank) = tank.Shoot
 
 [<Test>]
 let ``tank should not shoot with wolf inside`` () =
